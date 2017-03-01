@@ -35,6 +35,8 @@ public class Recipes {
         recipes.get(1).setStep(new Step(1,"Revolcer las alcaparras"));
         recipes.get(1).setStep(new Step(2,"desgranar la mazorca"));
         recipes.get(1).setStep(new Step(3,"Cocinar la lenteja"));
+        recipes.add(new Recipe(3, "arroz",2));
+        recipes.get(2).setIngredient(new Ingredient("agua",1));
     }
       public Recipe seek(String name)
       {
@@ -48,4 +50,5 @@ public class Recipes {
          }
          return null;
       }
+      
 }

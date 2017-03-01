@@ -16,7 +16,7 @@ public class Recipe {
     private String name;
     private Integer duration;
     public ArrayList<Ingredient> ingredients = new ArrayList<Ingredient>();
-          public ArrayList<Step> steps = new ArrayList<Step>();
+    public ArrayList<Step> steps = new ArrayList<Step>();
     public Recipe(Integer iD,String name,Integer duration){
         this.iD = iD;
         this.name = name;
