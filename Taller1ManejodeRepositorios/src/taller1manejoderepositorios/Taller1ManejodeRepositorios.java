@@ -16,6 +16,9 @@ public class Taller1ManejodeRepositorios {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        searchByName window = new searchByName();
+        window.setVisible(true);
+        window.setTitle("Formulario de Busqueda");
     }
     
 }
