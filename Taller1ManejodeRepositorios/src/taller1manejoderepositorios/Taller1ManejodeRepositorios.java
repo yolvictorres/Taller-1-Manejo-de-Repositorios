@@ -14,6 +14,9 @@ public class Taller1ManejodeRepositorios {
     /**
      * @param args the command line arguments
      */
+    public static Recipes recepies = new Recipes();
+    
+
     public static void main(String[] args) {
         // TODO code application logic here
         searchByName window = new searchByName();

@@ -14,12 +14,12 @@ public class searchByName extends javax.swing.JFrame {
     /**
      * Creates new form searchByName
      */
-    Recipes recetas = new Recipes();
+    Recipes recipies = Taller1ManejodeRepositorios.recepies;
    
     public searchByName() {
         initComponents();
          // jalm  add -Recipes Default
-        recetas.loadDefaultRecipes();
+         recipies.loadDefaultRecipes();
     }
 
     /**
@@ -96,17 +96,17 @@ public class searchByName extends javax.swing.JFrame {
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
         // TODO add your handling code here:
-        Recipe recetaSeek =  this.recetas.seek(this.txtRecipeName.getText());
-        if(recetaSeek != null){
+        Recipe recipeSeek =  this.recipies.seek(this.txtRecipeName.getText());
+        if(recipeSeek != null){
             this.txtAreaRecipe.setText("");
-            this.txtAreaRecipe.append("Id de La Receta : "  + recetaSeek.getiD() + "\n");
-            this.txtAreaRecipe.append("Nombre de La Receta : "  + recetaSeek.getName() + "\n");
+            this.txtAreaRecipe.append("Id de La Receta : "  + recipeSeek.getiD() + "\n");
+            this.txtAreaRecipe.append("Nombre de La Receta : "  + recipeSeek.getName() + "\n");
             this.txtAreaRecipe.append("\n Ingredientes de la Receta : \n");
-            for(Ingredient e: recetaSeek.ingredients){
+            for(Ingredient e: recipeSeek.ingredients){
                 this.txtAreaRecipe.append(" --- " + e.getName() + " --- " + e.getQuantity() + " -- gramos \n");
             }
               this.txtAreaRecipe.append("\n Pasos de la Receta : \n");
-            for(Step e: recetaSeek.steps){
+            for(Step e: recipeSeek.steps){
                 this.txtAreaRecipe.append(" --- " + e.getId() + " --- " + e.getDescription() + " -- gramos \n");
             }
         }else
