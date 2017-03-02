@@ -9,6 +9,8 @@ package taller1manejoderepositorios;
  *
  * @author Home
  */
+import dao.Step;
+import dao.Recipe;
 import java.util.ArrayList;
 
 public class Recipes {
@@ -50,4 +52,15 @@ public class Recipes {
          return null;
       }
       
+      public Recipe seek_name_time(String input){
+          for(Recipe e : this.recipes){ 
+            if(input.toLowerCase().equals(e.getName().toLowerCase())){
+                return e;
+            }
+            if(input.equals(String.valueOf(e.getDuration()))){
+                return e;
+            }
+          }
+          return null;
+      }
 }

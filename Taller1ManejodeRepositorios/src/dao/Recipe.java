@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package taller1manejoderepositorios;
+package dao;
 
 /**
  *
  * @author Home
  */
 import java.util.ArrayList;
+import taller1manejoderepositorios.Ingredient;
 
 public class Recipe {
     private Integer iD;

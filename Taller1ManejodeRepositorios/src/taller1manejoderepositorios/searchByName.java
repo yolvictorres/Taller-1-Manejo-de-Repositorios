@@ -5,6 +5,9 @@
  */
 package taller1manejoderepositorios;
 
+import dao.Step;
+import dao.Recipe;
+
 /**
  *
  * @author Home
