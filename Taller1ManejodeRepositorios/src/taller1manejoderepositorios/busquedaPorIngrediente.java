@@ -97,6 +97,9 @@ public class busquedaPorIngrediente extends javax.swing.JFrame {
 
     private void buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarActionPerformed
         // TODO add your handling code here:
+        
+        
+        
     }//GEN-LAST:event_buscarActionPerformed
 
     /**

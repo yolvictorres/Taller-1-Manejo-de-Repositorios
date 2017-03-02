@@ -19,15 +19,15 @@ public class Taller1ManejodeRepositorios {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        /*searchByName window = new searchByName();
+        searchByName window = new searchByName();
         window.setVisible(true);
         window.setTitle("Formulario de Busqueda");
         
         busquedaPorIngrediente ventana=new busquedaPorIngrediente();
         ventana.setVisible(true);
-        ventana.setTitle("Busqueda de receta por ingrediente");*/
+        ventana.setTitle("Busqueda de receta por ingrediente");
         Recipes r=new Recipes();
-        System.out.println(r.recipes);
+        System.out.println(r.recipes);   
     }
     
 }
